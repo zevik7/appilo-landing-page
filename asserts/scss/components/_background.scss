@@ -1,0 +1,13 @@
+@use '../abstracts' as a;
+
+.background-gradient-main {
+  background-image: a.$gradient-main;
+  background-size: 200%,1px;
+  transition: 500ms all ease;
+}
+
+.background-gradient-main:hover {
+  background-position: 120%;
+}
+
+

@@ -1,0 +1,58 @@
+// Pure colors
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$black: #000;
+$primary: #0d6efd;
+$secondary: #6c757d;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #212529;
+$black: #000;
+
+// Text
+$text: #000;
+$text-light: #fff;
+
+// Background color
+$background-main: #F1F2F7;
+$background-white: #fff;
+// $background-transparent: rgba(0, 0, 0, 0.03);
+// $background-disabled: rgba(210, 210, 210);
+
+// Hover color
+$hover-text: rgb(220, 220, 220);
+$hover-bg: rgba(245, 245, 245);
+
+// Shadow
+$box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 16px 0px;
+// $box-shadow-sm: 0 0.125rem 0.25rem rgba(#000, 0.075);
+// $box-shadow-lg: 0 1rem 3rem rgba(#000, 0.175);
+// $box-shadow-inset: inset 0 1px 2px rgba(#000, 0.075);
+
+// Border
+$border-transparent: 1px solid rgba(0, 0, 0, 0.35);
+$border-light: 1px solid #dee2e6;
+$border-dark: 1px solid #c7c7c7;
+$border-radius: 2px;
+$border-radius-lg: 4px;
+
+// Gradient colors
+$gradient-main: -webkit-gradient(linear,left top,right top,from(#137ffc),color-stop(50%,#f94f5a),to(#137ffc));
+
+// Size
+$nav-height: 40px;
+$headbar-height: 80px;
