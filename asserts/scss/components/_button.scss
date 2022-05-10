@@ -29,10 +29,10 @@
 
 .btn-secondary {
   color: a.$black;
-	transition: 500ms all ease;
+	transition: 200ms all ease;
   box-shadow: a.$box-shadow;
   
-	&:hover {
+	&:hover, &.active {
     color: a.$white;
     background-size: 200%, 1px;
 		background-image: a.$gradient-main;
