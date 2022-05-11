@@ -1,4 +1,23 @@
+@use '../abstracts' as a;
+
 html {
-  font-family: 'GT Walsheim Pro', 'arial';
-  font-size: 62.5%;
+	font-family: "GT Walsheim Pro", "arial";
+	font-size: 62.5%;
+}
+
+.sub-title {
+	display: inline-block;
+	font-size: 1.8rem;
+	background-image: a.$gradient-second;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.title {
+  font-size: 4.8rem;
+  line-height: 5.7rem;
+}
+
+.title, .sub-title {
+  text-align: center;
 }
