@@ -69,7 +69,7 @@
 			text-align: center;
 			h1 {
 				padding-bottom: 20px;
-				background-image: url(/asserts/images/text-bg.webp);
+				background-image: url(./asserts/images/text-bg.webp);
 				-webkit-background-clip: text;
 				background-clip: text;
 				-webkit-text-fill-color: transparent;
@@ -168,7 +168,7 @@
 
 .rev-features {
 	padding: 60px 0;
-	background-image: url(/asserts/images/rev-bg.webp);
+	background-image: url(./asserts/images/rev-bg.webp);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50%;
@@ -398,7 +398,7 @@
 		background-color: a.$background-dark;
 	}
 	&__content {
-		background-image: url(/asserts/images/inner-bg.webp);
+		background-image: url(./asserts/images/inner-bg.webp);
 		color: a.$white;
 		padding: 85px 0;
 		border-radius: 8px;
@@ -512,7 +512,7 @@
 
 .load-speed {
 	padding: 90px 0;
-	background-image: url(/asserts/images/sp-bg.webp);
+	background-image: url(./asserts/images/sp-bg.webp);
 	color: a.$white;
 
 	&__title-box {
@@ -554,7 +554,7 @@
 
 .ecommerce {
 	padding-top: 70px;
-	background-image: url(/asserts/images/woo-bg.webp);
+	background-image: url(./asserts/images/woo-bg.webp);
 
 	&__content {
 		padding-top: 80px;
@@ -686,7 +686,7 @@
 
 .author-support {
 	padding: 90px 0;
-	background-image: url(/asserts/images/sp-bg-1.webp);
+	background-image: url(./asserts/images/sp-bg-1.webp);
 	color: a.$white;
 	&__item {
 		text-align: center;
@@ -706,7 +706,7 @@
 .download {
 	padding-top: 120px;
 	padding-bottom: 85px;
-	background-image: url(/asserts/images/dn.webp);
+	background-image: url(./asserts/images/dn.webp);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 0 250px;
