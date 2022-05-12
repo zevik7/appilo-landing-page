@@ -147,9 +147,38 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }  
   100% {
     transform: translateY(0);
+  }
+}
+
+/* Flip Y animation */
+@keyframes flipY {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Slide animation */
+@keyframes slide-left {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1000px;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
   }
 }

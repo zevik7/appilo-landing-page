@@ -31,9 +31,10 @@ $text-gray-light: #cacacc;
 $text-dark: #212529;
 
 // Background color
-$background-main: #fafafa;
-$background-dark: #f1f2f7;
+$background-main: #f1f2f7;
+$background-light: #fafafa;
 $background-white: #fff;
+$background-transparent: rgba(0, 0, 0, 0.8);
 
 // Hover color
 $hover-text: rgb(220, 220, 220);
@@ -45,8 +46,8 @@ $box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 16px 0px;
 $box-shadow-lg: 0 35px 21px rgb(0 14 32 / 13%);
 
 // Border
-$border-light: 1px solid #fff;
-$border-dark: 1px solid #aaa;
+$border-light: #fff;
+$border-dark: #aaa;
 
 // Gradient colors
 $gradient-main: -webkit-gradient(

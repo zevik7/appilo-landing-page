@@ -34,12 +34,53 @@
 				margin: 0 30px;
 				cursor: pointer;
 			}
-		}
 
+			&.responsive {
+				display: flex !important;
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				flex-direction: column;
+				justify-content: flex-start;
+				padding: 40px;
+				padding-top: 20px;
+				background-color: white;
+
+				.nav__item {
+					padding: 10px 30px 10px 0;
+					border-bottom: 1px solid a.$border-dark;
+					text-transform: uppercase;
+				}
+
+				animation: slideInRight;
+				animation-duration: 1s;
+			}
+		}
+		.nav-back.active {
+			content: "";
+			z-index: -1;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: a.$background-transparent;
+		}
 		.btn {
+			margin-left: auto;
 			i {
 				margin-left: 5px;
 			}
+		}
+
+		.mobile-btn {
+			display: none;
+			margin-left: 20px;
+			padding: 5px;
+			color: #4c40f7;
+			font-size: 2.4rem;
+			cursor: pointer;
 		}
 	}
 }
@@ -152,12 +193,15 @@
 		align-items: center;
 		width: 274px;
 		margin-right: 15px;
+		cursor: pointer;
+		&:hover {
+			img {
+				animation: flipY 1s infinite;
+			}
+		}
 
 		img {
 			margin-right: 15px;
-			&:hover {
-				animation: bounce 1s infinite;
-			}
 		}
 		.features-item__title {
 			display: block;
@@ -256,8 +300,9 @@
 
 .demos {
 	padding-top: 100px;
-	background-color: a.$background-main;
+	background-color: a.$background-light;
 	&__title-box {
+		margin: auto;
 		text-align: center;
 	}
 
@@ -290,6 +335,7 @@
 		}
 
 		.page-item {
+			margin-top: 14px;
 			padding-top: 30px;
 			padding-left: 15px;
 			padding-bottom: 30px;
@@ -311,6 +357,7 @@
 			}
 
 			&__content {
+				overflow: hidden;
 				position: relative;
 				height: 370px;
 				display: flex;
@@ -320,6 +367,8 @@
 				border-bottom-left-radius: 8px;
 
 				span {
+					position: relative;
+					z-index: 10;
 					transform: translateX(-35%) rotate(90deg);
 					color: a.$text-gray-light;
 					font-size: 4.8rem;
@@ -363,11 +412,17 @@
 
 .features-2 {
 	padding: 90px 0;
-	background-color: a.$background-dark;
+	background-color: a.$background-main;
 	font-size: 1.8rem;
 	.feature-item {
 		display: flex;
 		align-items: center;
+		cursor: pointer;
+		&:hover {
+			.feature-item__icon {
+				animation: bounce 0.3s infinite;
+			}
+		}
 		&__icon {
 			margin-right: 25px;
 			width: 80px;
@@ -395,7 +450,7 @@
 		width: 100%;
 		height: 390px;
 		position: absolute;
-		background-color: a.$background-dark;
+		background-color: a.$background-main;
 	}
 	&__content {
 		background-image: url(../images/inner-bg.webp);
@@ -415,8 +470,10 @@
 			&__list {
 				.slider__item {
 					img {
+						max-width: 100%;
 						width: 889px;
 						height: 512px;
+						object-fit: contain;
 						border-radius: 8px;
 					}
 				}
@@ -556,6 +613,12 @@
 	padding-top: 70px;
 	background-image: url(../images/woo-bg.webp);
 
+	&__bg {
+		img {
+			max-width: 100%;
+		}
+	}
+
 	&__content {
 		padding-top: 80px;
 
@@ -597,7 +660,7 @@
 	position: relative;
 	padding-top: 110px;
 	padding-bottom: 90px;
-	background-color: a.$background-dark;
+	background-color: a.$background-main;
 	overflow: hidden;
 
 	&__text-box {
@@ -625,24 +688,6 @@
 			animation: slide-right 40s forwards;
 			animation-delay: 1s;
 			animation-iteration-count: infinite;
-		}
-
-		@keyframes slide-left {
-			0% {
-				left: 0;
-			}
-			100% {
-				left: -1000px;
-			}
-		}
-
-		@keyframes slide-right {
-			0% {
-				left: -1000px;
-			}
-			100% {
-				left: 0;
-			}
 		}
 
 		.review__item {
@@ -770,6 +815,49 @@
 				color: a.$text-gray;
 				background-color: a.$background-main;
 				border-radius: 50%;
+			}
+		}
+	}
+}
+
+/* Responsive */
+@media only screen and (max-width: 1400px) {
+	.banner {
+		padding-bottom: 100px;
+	}
+	.header {
+		&__wrapper {
+			.nav {
+				display: none;
+			}
+			.mobile-btn {
+				display: block;
+			}
+		}
+	}
+	.mockup-img {
+		display: none;
+	}
+	.demos {
+		&__content {
+			.filter {
+				&__list {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.ecommerce {
+		padding-bottom: 90px;
+		&__content {
+			.features {
+				justify-content: flex-start;
+				&__item {
+					margin-right: 20px;
+				}
 			}
 		}
 	}
