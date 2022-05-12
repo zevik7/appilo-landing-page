@@ -1492,7 +1492,7 @@ h1, h2, h3, p {
 }
 .banner .banner__content .banner__text h1 {
   padding-bottom: 20px;
-  background-image: url(/asserts/images/text-bg.webp);
+  background-image: url(../images/text-bg.webp);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1576,7 +1576,7 @@ h1, h2, h3, p {
 
 .rev-features {
   padding: 60px 0;
-  background-image: url(https://appilo.b-cdn.net/wp-content/uploads/2022/03/rev-bg.png);
+  background-image: url(../images/rev-bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -1788,7 +1788,7 @@ h1, h2, h3, p {
   background-color: #f1f2f7;
 }
 .inner-pages__content {
-  background-image: url(https://appilo.b-cdn.net/wp-content/uploads/2022/03/inner-bg.jpg);
+  background-image: url(../images/inner-bg.webp);
   color: #fff;
   padding: 85px 0;
   border-radius: 8px;
@@ -1883,7 +1883,7 @@ h1, h2, h3, p {
 
 .load-speed {
   padding: 90px 0;
-  background-image: url(/asserts/images/sp-bg.webp);
+  background-image: url(../images/sp-bg.webp);
   color: #fff;
 }
 .load-speed__title-box {
@@ -1924,7 +1924,7 @@ h1, h2, h3, p {
 
 .ecommerce {
   padding-top: 70px;
-  background-image: url(/asserts/images/woo-bg.webp);
+  background-image: url(../images/woo-bg.webp);
 }
 .ecommerce__content {
   padding-top: 80px;
@@ -2040,7 +2040,7 @@ h1, h2, h3, p {
 
 .author-support {
   padding: 90px 0;
-  background-image: url(/asserts/images/sp-bg-1.webp);
+  background-image: url(../images/sp-bg-1.webp);
   color: #fff;
 }
 .author-support__item {
@@ -2060,7 +2060,7 @@ h1, h2, h3, p {
 .download {
   padding-top: 120px;
   padding-bottom: 85px;
-  background-image: url(/asserts/images/dn.webp);
+  background-image: url(../images/dn.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 250px;
