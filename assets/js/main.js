@@ -1,13 +1,11 @@
 // Navigation responsive
 const navToggle = document.querySelector('.mobile-btn')
-const nav = document.querySelector('.nav')
-const navBack = document.querySelector('.nav-back')
+const navBox = document.querySelector('.nav-box')
+const navBack = document.querySelector('.nav-box__responsive-background')
 
 navToggle.onclick = () => {
-  nav.className = 'nav responsive'
-  navBack.className = 'nav-back active'
+  navBox.className = 'nav-box responsive'
 }
 navBack.onclick = () => {
-  nav.className = 'nav'
-  navBack.className = 'nav-back'
+  navBox.className = 'nav-box'
 }

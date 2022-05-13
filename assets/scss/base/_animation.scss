@@ -70,7 +70,7 @@
 }
 
 /* Slide animation */
-@keyframes slide-left {
+@keyframes slide-left-rating {
 	0% {
 		left: 0;
 	}
@@ -79,7 +79,7 @@
 	}
 }
 
-@keyframes slide-right {
+@keyframes slide-right-rating {
 	0% {
 		left: -1000px;
 	}
@@ -87,3 +87,14 @@
 		left: 0;
 	}
 }
+
+@keyframes slide-left {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+
