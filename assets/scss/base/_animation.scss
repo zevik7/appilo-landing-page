@@ -1,0 +1,89 @@
+@use "../abstracts" as a;
+
+/* Slide down */
+@keyframes slide-down {
+	0% {
+		opacity: 0;
+		transform: translateY(-5%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Slide from top and right */
+@keyframes slide-top-right {
+	0% {
+		transform-origin: top right;
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+/* Fade in */
+@keyframes fade-in {
+	0% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Modal animation */
+@keyframes zoom-center {
+	0% {
+		transform: scale(0.5);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+/* Bounce animation */
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* Flip Y animation */
+@keyframes flipY {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+
+/* Slide animation */
+@keyframes slide-left {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -1000px;
+	}
+}
+
+@keyframes slide-right {
+	0% {
+		left: -1000px;
+	}
+	100% {
+		left: 0;
+	}
+}

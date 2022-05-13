@@ -1,21 +1,23 @@
 @use '../abstracts' as a;
 
 .grid {
+  width: 100%;
   padding: 0;
   display: block;
-  width: 100%;
 }
 
 .wide {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1200px; // Default
 }
 
+// Mobile first
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-left: -4px;
   margin-right: -4px;
+
   &.center-col {
     justify-content: center;
   }
@@ -29,10 +31,6 @@
 .row.no-gutters .col {
   padding-left: 0;
   padding-right: 0;
-}
-
-.row-al-center {
-  align-items: center;
 }
 
 .col {
@@ -194,7 +192,7 @@
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 1200px) {
   .wide {
     max-width: 1200px;
   }
