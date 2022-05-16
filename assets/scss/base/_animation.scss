@@ -1,61 +1,18 @@
 @use "../abstracts" as a;
 
-/* Slide down */
-@keyframes slide-down {
-	0% {
-		opacity: 0;
-		transform: translateY(-5%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-/* Slide from top and right */
-@keyframes slide-top-right {
-	0% {
-		transform-origin: top right;
-		opacity: 0;
-		transform: scale(0.5);
-	}
-	100% {
-		opacity: 1;
-		transform: scale(1);
-	}
-}
-/* Fade in */
-@keyframes fade-in {
-	0% {
-		opacity: 0.5;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-/* Modal animation */
-@keyframes zoom-center {
-	0% {
-		transform: scale(0.5);
-		opacity: 0.5;
-	}
-	100% {
-		transform: scale(1);
-		opacity: 1;
-	}
-}
-
-/* Bounce animation */
-@keyframes bounce {
-	0% {
-		transform: translateY(0);
-	}
-	50% {
+/* JumpIn animation */
+@keyframes JumpIn {
+	20% {
 		transform: translateY(-10px);
 	}
-	100% {
-		transform: translateY(0);
+	30% {
+		transform: translateY(0px);
+	}
+	34% {
+		transform: translateY(-5px);
+	}
+	38% {
+		transform: translateY(0px);
 	}
 }
 
@@ -74,8 +31,11 @@
 	0% {
 		left: 0;
 	}
-	100% {
+	50% {
 		left: -1000px;
+	}
+	100% {
+		left: 0px;
 	}
 }
 
@@ -83,8 +43,11 @@
 	0% {
 		left: -1000px;
 	}
-	100% {
+	50% {
 		left: 0;
+	}
+	100% {
+		left: -1000px;
 	}
 }
 
@@ -97,4 +60,44 @@
 	}
 }
 
+@keyframes FadeInLeft{
+	0% {
+		opacity: 0;
+		transform: translateX(-50%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
 
+@keyframes FadeInRight{
+	0% {
+		opacity: 0;
+		transform: translateX(50%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes FadeInBottom{
+	0% {
+		opacity: 0;
+		transform: translateY(-50%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes FadeInCenter{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

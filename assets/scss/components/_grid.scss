@@ -36,6 +36,10 @@
 .col {
   padding-left: 4px;
   padding-right: 4px;
+  &.center-content {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
