@@ -7,7 +7,8 @@
     "start": "node server.js",
     "watch": "gulp watch",
     "build": "gulp build",
-    "dev": "concurrently \"npm start\" \"npm run watch\""
+    "dev": "concurrently \"npm start\" \"npm run watch\"",
+    "prettier": "prettier --write"
   },
   "devDependencies": {
     "browser-sync": "^2.27.7",
@@ -18,6 +19,7 @@
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "node-sass": "^7.0.1",
+    "prettier": "2.6.2",
     "sass": "^1.44.0"
   },
   "repository": {
