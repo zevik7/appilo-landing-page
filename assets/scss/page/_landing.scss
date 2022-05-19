@@ -30,7 +30,6 @@
         display: flex;
         justify-content: space-evenly;
         max-width: 696px;
-        animation: slideLeft 1s;
 
         &__item {
           margin: 0 30px;
@@ -912,6 +911,29 @@
         border-radius: 50%;
       }
     }
+  }
+}
+
+.scroll-on-top {
+  position: fixed;
+  z-index: 5;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background-image: a.$gradient-third;
+  cursor: pointer;
+  color: a.$white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+    animation: FadeInTop 1s;
   }
 }
 

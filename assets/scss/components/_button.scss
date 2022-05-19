@@ -1,42 +1,44 @@
-@use "../abstracts" as a;
+@use '../abstracts' as a;
 
 .btn {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	vertical-align: middle;
-	user-select: none;
-	border: none;
-	border-radius: 100vh;
-	outline: none;
-	cursor: pointer;
-	font-weight: inherit;
-	background-color: a.$background-white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  user-select: none;
+  border: none;
+  border-radius: 100vh;
+  outline: none;
+  cursor: pointer;
+  font-weight: inherit;
+  background-color: a.$background-white;
 }
 
 .btn-primary {
-	color: a.$white;
-	background-image: a.$gradient-main;
-	background-size: 200%, 1px;
-	transition: 500ms all ease;
+  color: a.$white;
+  background-image: a.$gradient-main;
+  background-size: 200%, 1px;
+  transition: 500ms all ease;
 
-	&:hover {
-		background-position: 120%;
-	}
+  &:hover {
+    background-position: 120%;
+  }
 }
 
 .btn-secondary {
-	color: a.$black;
-	background-size: 200%, 1px;
-	transition: 200ms all ease;
-	box-shadow: a.$box-shadow;
+  color: a.$black;
+  background-size: 0, 0;
+  box-shadow: a.$box-shadow;
+	transition: background-size 1s ease-in-out;
+	opacity: 0.9;
 	
-	&:hover,
-	&.active {
+  &:hover,
+  &.active {
 		color: a.$white;
-		background-image: a.$gradient-main;
-		background-size: 200%, 1px;
-	}
+    background-image: a.$gradient-main;
+		background-size: 200%, 100px;
+		opacity: 1;
+  }
 }
 
 // /*btn-secondary CSS*/
