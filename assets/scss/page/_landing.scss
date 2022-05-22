@@ -1,7 +1,7 @@
 @use '../abstracts' as a;
 
 .app {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
@@ -76,6 +76,13 @@
       height: 48px;
       i {
         margin-left: 5px;
+        transition: transform 1s;
+      }
+
+      &:hover {
+        i {
+          transform: translateX(5px);
+        }
       }
     }
 
@@ -93,6 +100,8 @@
     position: fixed;
     padding: 15px 60px;
     animation: headerShow 1s;
+    background-color: a.$white;
+    box-shadow: a.$box-shadow;
   }
 }
 
@@ -428,6 +437,10 @@
             height: 55px;
             border-radius: 5px;
             animation: FadeInBottom 1s;
+
+            &::before {
+              border-radius: 0;
+            }
           }
         }
       }
@@ -536,14 +549,39 @@
     .slider {
       position: relative;
       padding-top: 50px;
+
       &__list {
         position: relative;
+        overflow: hidden;
+
         .slider__item {
+          opacity: 0;
+          animation: none;
+          
           img {
             max-width: 100%;
             width: 889px;
             object-fit: contain;
             border-radius: 8px;
+          }
+          
+          &.active {
+            opacity: 1;
+            animation: FadeInCenter 0.5s ease-in;
+          }
+
+          &.first-thumb {
+            position: absolute;
+            top: 0;
+            left: -64%;
+            opacity: 1;
+          }
+
+          &.second-thumb {
+            position: absolute;
+            top: 0;
+            right: -64%;
+            opacity: 1;
           }
         }
       }
@@ -551,11 +589,13 @@
       &__control {
         .btn {
           position: absolute;
+          z-index: 1;
           width: 90px;
           height: 90px;
           border-radius: 50%;
-          box-shadow: a.$box-shadow;
+          box-shadow: a.$box-shadow-lg;
           font-size: 2rem;
+          border: 1px solid a.$border-light;
 
           &:hover {
             color: a.$white;
@@ -659,6 +699,13 @@
   &__content {
     margin: auto;
     max-width: 780px;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+      animation: FadeInLeft 1s;
+    }
+    
     .load-speed__item {
       margin: auto;
       width: 215px;
@@ -696,7 +743,7 @@
 
       &.active {
         opacity: 1;
-        animation: zoomCenter 1s;
+        animation: zoomCenter 1.5s;
       }
     }
 
@@ -708,7 +755,7 @@
       opacity: 0;
       &.active {
         opacity: 1;
-        animation: FadeInLeft 1s ease-in;
+        animation: FadeInLeft 1.5s ease-in;
       }
     }
   }
@@ -827,8 +874,15 @@
   padding: 90px 0;
   background-image: url(../images/sp-bg-1.webp);
   color: a.$white;
+  
   &__item {
     text-align: center;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+      animation: FadeInBottom 1.5s;
+    }
     img {
       margin-bottom: 25px;
     }
