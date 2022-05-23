@@ -145,3 +145,26 @@
 		transform: scale(1)
 	}
 }
+
+@property --num {
+	syntax: "<integer>";
+	initial-value: 90;
+	inherits: false;
+}
+
+.counter-animation-90 {
+	animation: counter 4.5s alternate ease-in-out;
+	counter-reset: num var(--num);
+}
+.counter-animation-90::after {
+	content: counter(num);
+}
+
+@keyframes counter {
+	from {
+		--num: 0;
+	}
+	to {
+		--num: 90;
+	}
+}

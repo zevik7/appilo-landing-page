@@ -8,6 +8,7 @@ const ecommerceBg = $('.ecommerce .bg');
 const ecommerceFrontBg = $('.ecommerce .front-bg');
 const supports = $$('.author-support__item');
 const loadSpeedContent = $('.load-speed__content');
+const loadSpeedItemPercents = $$('.load-speed__item .percent');
 
 // Scroll on top button
 const scrollOnTopBtn = $('.scroll-on-top');
@@ -65,6 +66,17 @@ function listenScroll() {
     loadSpeedContent.classList.add('active');
   } else {
     loadSpeedContent.classList.remove('active');
+  }
+
+  // Load speed's items
+  for (let i = 0; i < loadSpeedItemPercents.length; i++) {
+    loadSpeedItemPercents[i].innerText = '';
+    const loadSpeedItemTop = loadSpeedItemPercents[i].getBoundingClientRect().top;
+    if (loadSpeedItemTop < windowHeight - elementVisible) {
+      loadSpeedItemPercents[i].classList.add('counter-animation-90');
+    } else {
+      loadSpeedItemPercents[i].classList.remove('counter-animation-90');
+    }
   }
 }
 
